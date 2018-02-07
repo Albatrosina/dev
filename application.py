@@ -11,7 +11,7 @@ class Application:
         self.driver = webdriver.Chrome(executable_path="/home/albatros/mystuff/Autotesting/Dev/chromedriver")
         self.wait = WebDriverWait(self.driver,10)
         self.driver.maximize_window()
-        self.driver.implicitly_wait(20)
+        self.driver.implicitly_wait(30)
         self.session = SessionHelper(self)
         self.fill = FillRowHelper(self)
         self.action = ActionHelper(self)

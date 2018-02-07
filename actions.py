@@ -11,7 +11,6 @@ class ActionHelper:
 
     def switch_to_rpm_tab(self):
         driver = self.app.driver
-        driver.switch_to.default_content()
         self.choose_customer(driver, "Doug Claassen")
         # switch to another account and select the RPM tab
         Select(driver.find_element_by_name("account_numbers")).select_by_value("1")

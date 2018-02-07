@@ -1,5 +1,6 @@
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
+from model.login import Login
 class SessionHelper:
 
     def __init__(self, app):
@@ -18,3 +19,13 @@ class SessionHelper:
     def logout_from_system(self):
         driver = self.app.driver
         driver.find_element_by_link_text("Log out").click()
+
+    def ensure_logout(self):
+        driver = self.app.driver
+        if len(driver.find_elements_by_link_text("Log out")) > 0:
+            self.logout_from_system()
+
+    def ensure_login(self,login):
+        driver = self.app.driver
+        if len(driver.find_elements_by_name("op")) > 0:
+            self.login_to_system()
