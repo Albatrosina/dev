@@ -1,8 +1,8 @@
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
-from fixture.session import SessionHelper
-from fixture.fill_row import FillRowHelper
-from fixture.actions import ActionHelper
+from dev.fixture.session import SessionHelper
+from dev.fixture.fill_row import FillRowHelper
+from dev.fixture.actions import ActionHelper
 
 
 class Application:

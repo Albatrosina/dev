@@ -1,6 +1,5 @@
 import pytest
-from fixture.application import Application
-from model.login import Login
+from dev.fixture.application import Application
 
 fixture = None
 
@@ -12,7 +11,7 @@ def app():
     else:
         if not fixture.is_valid():
             fixture = Application()
-    fixture.session.login_to_system(Login(name="Lead Tiller", password="Gmtfree123"))
+    fixture.session.login_to_system(name="Lead Tiller", password="Gmtfree123")
     return fixture
 
 @pytest.fixture(scope="session", autouse=True)
