@@ -1,0 +1,6 @@
+{
+  "test_basic_flow_rpm.py::test_r_p_m_accept": true,
+  "test_basic_flow_rpm.py::test_r_p_m_decline": true,
+  "test_rpm_fills.py::test_r_p_m_fills": true,
+  "test_rpm_targets.py::test_r_p_m_decline": true
+}

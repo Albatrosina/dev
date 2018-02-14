@@ -24,7 +24,7 @@ class SessionHelper:
         if len(driver.find_elements_by_link_text("Log out")) > 0:
             self.logout_from_system()
 
-    def ensure_login(self,login):
+    def ensure_login(self):
         driver = self.app.driver
         if len(driver.find_elements_by_name("op")) > 0:
             self.login_to_system()

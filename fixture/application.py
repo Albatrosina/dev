@@ -8,7 +8,7 @@ from dev.fixture.actions import ActionHelper
 class Application:
 
     def __init__(self):
-        self.driver = webdriver.Chrome(executable_path="/home/albatros/mystuff/Autotesting/Dev/chromedriver")
+        self.driver = webdriver.Chrome(executable_path="D:\Dan\Work\Practice\chromedriver")
         self.wait = WebDriverWait(self.driver,10)
         self.driver.maximize_window()
         self.driver.implicitly_wait(30)
@@ -18,7 +18,7 @@ class Application:
 
     def is_valid(self):
         try:
-            self.driver.current_url
+            self.driver.current_url()
             return True
         except:
             return False

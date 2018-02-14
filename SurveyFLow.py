@@ -8,7 +8,7 @@ import unittest, time, re
 class SurveyFLow(unittest.TestCase):
 
     def setUp(self):
-        self.driver = webdriver.Chrome(executable_path="/home/albatros/mystuff/Autotesting/Dev/chromedriver")
+        self.driver = webdriver.Chrome(executable_path="D:\Dan\Work\Practice\chromedriver")
         self.driver.implicitly_wait(30)
 
     
